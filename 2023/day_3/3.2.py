@@ -15,7 +15,6 @@ def solution(input: str):
             found_up = False
             found_down = False
             if not line[i].isdigit() and line[i] is GEAR:
-                print(f"found gear at line {l}, col {i}")
                 # check same line
                 if i - 1 >= 0:
                     if line[i - 1].isdigit():
@@ -61,9 +60,6 @@ def solution(input: str):
                         count += 1
 
                 if count == 2:
-                    print(
-                        f"GEAR at {l} has {count} adjacent numbers with ratio: {ratio}"
-                    )
                     total += ratio
             i += 1
         l += 1
@@ -74,7 +70,6 @@ def solution(input: str):
 def find_digit(line: str, index: int) -> int:
     digit = line[index]
 
-    print(digit)
     i = index
     # left
     while i >= 0:

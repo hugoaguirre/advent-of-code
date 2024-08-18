@@ -1,5 +1,5 @@
 def solution(input: str):
-    with open(input, 'r+') as fd:
+    with open(input, "r+") as fd:
         content = fd.readlines()
 
     content = [c.strip() for c in content]
@@ -21,5 +21,6 @@ def solution(input: str):
 
     print(total)
 
-if __name__ == '__main__':
-    solution('inputs/1.txt')
+
+if __name__ == "__main__":
+    solution("inputs/1.txt")
